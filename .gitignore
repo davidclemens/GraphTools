@@ -1,2 +1,5 @@
 # Ignore temporary MATLAB files
 *.m~
+
+# Ignore artefact files
+*.DS_Store
