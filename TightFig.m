@@ -1,5 +1,5 @@
-function varargout = TightFig(hfig,hsp,spi,PaperPos,MarginOuter,MarginInner,varargin)
-% TightFig  removes dead space in figures
+function varargout = tightFig(hfig,hsp,spi,PaperPos,MarginOuter,MarginInner,varargin)
+% tightFig  removes dead space in figures
 %   TIGHTFIG iteratively reformats an existing figure with a subplot matrix to 
 %   minimize the dead space between subplots.
 %
