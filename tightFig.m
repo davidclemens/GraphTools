@@ -1,6 +1,6 @@
 function varargout = tightFig(hfig,hsp,spi,PaperPos,MarginOuter,MarginInner,varargin)
 % tightFig  removes dead space in figures
-%   TIGHTFIG iteratively reformats an existing figure with a subplot matrix to 
+%   TIGHTFIG iteratively reformats an existing figure with a subplot matrix to
 %   minimize the dead space between subplots.
 %
 %   Syntax
@@ -15,13 +15,13 @@ function varargout = tightFig(hfig,hsp,spi,PaperPos,MarginOuter,MarginInner,vara
 %
 % 	Example(s)
 %     hfig = TIGHTFIG(hfig,hsp,spi,[10,20],[1,2,1,2],0.5);
-%     IGHTFIG(hfig,hsp,spi,[10,20],1,0.5);
+%     TIGHTFIG(hfig,hsp,spi,[10,20],1,0.5);
 %     hfig = TIGHTFIG(hfig,hsp,spi,[10,20],1,[0.5,2]);
 %
 % 	Input Arguments:
 %     hfig - figure handle
-%       figure handle       
-%         Handle to the figure to which to apply the TightFig function.
+%       figure handle
+%         Handle to the figure to which to apply the tightFig function.
 %
 %     hsp - array of subplot handles
 %       axis handle array
@@ -65,7 +65,7 @@ function varargout = tightFig(hfig,hsp,spi,PaperPos,MarginOuter,MarginInner,vara
     % Check inputs
     narginchk(6,7)
     nargoutchk(0,1)
-    
+
     gr  = groot;
     if nargin == 6
         DPI     = gr.ScreenPixelsPerInch;
